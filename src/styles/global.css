@@ -1,0 +1,50 @@
+@import './tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: var(--cream);
+    color: var(--ink);
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Focus rings — 2px --ink at 40% opacity, offset 2px */
+  :focus-visible {
+    outline: 2px solid rgba(20, 22, 26, 0.4);
+    outline-offset: 2px;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* 0.5px hairline borders — Tailwind can't do sub-pixel */
+  .rule-t {
+    border-top: 0.5px solid var(--ink-rule);
+  }
+  .rule-b {
+    border-bottom: 0.5px solid var(--ink-rule);
+  }
+  .hair-t {
+    border-top: 0.5px solid var(--ink-hair);
+  }
+  .hair-b {
+    border-bottom: 0.5px solid var(--ink-hair);
+  }
+  .rule-cream {
+    border: 0.5px solid var(--cream-rule);
+  }
+}

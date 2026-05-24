@@ -1,0 +1,20 @@
+:root {
+  /* Core */
+  --ink: #14161A;
+  --cream: #F4EFE6;
+  --rink: #BFD6DB;
+  --puck: #1F1F1F;
+  --blood: #B23A2E;
+
+  /* Derived */
+  --ink-muted: rgba(20, 22, 26, 0.75);
+  --ink-quiet: rgba(20, 22, 26, 0.55);
+  --ink-hint: rgba(20, 22, 26, 0.40);
+  --ink-rule: rgba(20, 22, 26, 0.20);
+  --ink-hair: rgba(20, 22, 26, 0.12);
+
+  /* On dark sections */
+  --cream-muted: rgba(244, 239, 230, 0.70);
+  --cream-quiet: rgba(244, 239, 230, 0.50);
+  --cream-rule: rgba(244, 239, 230, 0.20);
+}
