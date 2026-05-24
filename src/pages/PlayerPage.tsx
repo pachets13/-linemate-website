@@ -3,7 +3,6 @@ import ContrastSection from '../components/ContrastSection'
 import HowItWorks from '../components/HowItWorks'
 import FeaturesGrid from '../components/FeaturesGrid'
 import AntiFeatures from '../components/AntiFeatures'
-import DemoCard from '../components/DemoCard'
 import ParentsStaff from '../components/ParentsStaff'
 import FinalCtaBand from '../components/FinalCtaBand'
 import Footer from '../components/Footer'
@@ -16,7 +15,6 @@ export default function PlayerPage() {
       <HowItWorks />
       <FeaturesGrid />
       <AntiFeatures />
-      <DemoCard />
       <ParentsStaff />
       <FinalCtaBand
         headline="Join the waiting list."

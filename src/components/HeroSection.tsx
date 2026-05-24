@@ -1,5 +1,4 @@
 import PrimaryCta from './PrimaryCta'
-import SecondaryCta from './SecondaryCta'
 
 export default function HeroSection() {
   return (
@@ -31,9 +30,8 @@ export default function HeroSection() {
           <p className="mt-3 text-base text-cream-muted max-w-[480px]">
             Nutrition is the edge most junior players leave on the table. Linemate helps you take it on the bus, at the billet's, and the night before games. All without turning nutrition into a second job.
           </p>
-          <div className="mt-4 flex flex-col sm:flex-row items-start gap-3">
+          <div className="mt-4">
             <PrimaryCta label="Join the waiting list" />
-            <SecondaryCta label="Try a 60-second conversation →" href="#demo" variant="light" />
           </div>
         </div>
       </div>
